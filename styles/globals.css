@@ -1,0 +1,192 @@
+/* declaring the css variables colors */
+:root {
+  --color-primary-accent: #2614c7;
+  --color-input-bg: rgba(38, 50, 56, 0.1);
+  --color-primary: #263238;
+  --color-community-svg: #263238;
+  --color-hamburger-bg: #000;
+  --color-button-bg: #008000;
+  --color-social-bg: #008000;
+  --color-particle-svg: #008000;
+  --color-hero-particle-svg: rgba(38, 50, 56, 0.4);
+  --color-social-svg-bg: #fff;
+  --color-bulletin-bg: rgba(0, 128, 0, 0.1);
+  --color-footer-bg: rgba(242, 248, 242, 0.5);
+  --color-footer-bottom-bg: rgba(242, 248, 242, 0.5);
+  --color-card-article-bg: rgba(0, 128, 0, 0.05); 
+  --color-paragraph: #797979;
+  --color-button-text: rgb(255, 255, 255);
+  --color-bulletin-text: #008000;
+  --color-span-green-color-text: #008000;
+  --color-background: #fff;
+  --color-anchor: #000aff;
+}
+
+[data-theme='dark'] {
+  --color-primary-accent: #00ff4c;
+  --color-input-bg: #fff;
+  --color-primary: #fff;
+  --color-community-svg: rgba(255, 255, 255, 0.473);
+  --color-hamburger-bg: #fff;
+  --color-social-bg: #fff;
+  --color-particle-svg: #fff;
+  --color-social-svg-bg: #008000;
+  --color-hero-particle-svg: #fff;
+  --color-button-bg: #23B123;
+  --color-bulletin-bg: rgba(255, 255, 255, 0.05);
+    --color-footer-bg: rgba(53, 64, 70, 0.5);
+  --color-footer-bottom-bg: rgba(255, 255, 255, 0.42);;
+  --color-card-article-bg: rgba(255, 255, 255, 0.05);
+  --color-paragraph: #8a8a8a;
+  --color-button-text: rgb(0, 0, 0);
+  --color-bulletin-text: #fff;
+  --color-span-green-color-text: #23B123;
+  --color-background: #263238;
+  --color-anchor: #00ff4c;
+}
+*,
+ ::before { box-sizing: border-box; } 
+html,body { background-color: var(--color-background); color: var(--color-primary); box-sizing: border-box; margin: 0; padding: 0; } 
+
+h1,
+h3,
+p { margin: 0; padding: 0; } 
+a { text-decoration: none; } 
+button { cursor: pointer; } 
+.container { max-width: 1250px; margin: 0 auto; padding-left: 20px; padding-right: 20px; } 
+
+
+/* adding some custom CSS */
+
+nav { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; padding-bottom: 20px; } 
+nav .logo {font-family: 'Lato';font-style: normal;font-weight: 500;font-size: 36px;line-height: 43px;display: flex;align-items: center;color: var(--color-primary); } 
+nav ul { display: flex; justify-content: space-between; gap: 44px; } 
+nav ul li { list-style: none; } 
+nav ul li a { font-family: 'Lato';font-style: normal;font-weight: 400;font-size: 18px;line-height: 22px;color: var(--color-primary); } 
+.toggleNightDayIcon { font-size: 25px; cursor: pointer; } 
+nav .header-btns { display: flex; gap: 16px; } 
+nav .header-btns button { width: 142px; height: 64px; box-sizing: border-box;border-radius: 10px;font-family: 'Lato';font-style: normal;font-weight: 500;font-size: 18px;line-height: 22px; } 
+nav .header-btns button:nth-child(1) { padding: 13px 25px;width: 142px;height: 64px;border: 1px solid var(--color-primary);background-color: transparent;color: var(--color-primary); } 
+nav .header-btns button:nth-child(2) { padding: 13px 25px;width: 142px;height: 64px;border: none;background-color: var(--color-button-bg);color: #ffffff; } 
+.dark-light-mode-toggle { position: relative; z-index: 1; } 
+nav ul .mobile-header-btns, nav ul .logo.mobile-logo { display: none; } 
+nav ul .mobile-header-btns, nav ul .logo.mobile-logo svg { cursor: pointer; } 
+.hamburger { display: none; } 
+.hamburger svg { fill: var(--color-hamburger-bg); cursor: pointer; } 
+ /* PARTICLE */
+ .particle svg { stroke: var(--color-particle-svg); } 
+ .particleTopLeft { position: absolute; top: 0; left: 0; } 
+ .hero-section .heroSectionParticle .money-bag-svg { position: absolute; right: 320px; top: 0; fill: var(--color-hero-particle-svg); } 
+ .hero-section .heroSectionParticle .naira-svg-particle { position: absolute; right: 0; top: 40%; stroke: var(--color-hero-particle-svg); } 
+ .hero-section .circle-svg-particle { position: absolute; right: 0; top: 80%; fill: var(--color-hero-particle-svg); } 
+ .hero-section .tickStar-svg { position: absolute; left: 0; top: 60%; fill: var(--color-hero-particle-svg); }
+ .hero-section .currency-dollar-svg { position: absolute; left: 0; bottom: 10%; fill: var(--color-hero-particle-svg); } 
+ .hero-section .unfilled-circle-svg { position: absolute; left: 15%; bottom: 0; stroke: var(--color-hero-particle-svg); } 
+ .hero-section .unfilled-star-svg { position: absolute; right: 10%; bottom: 0; stroke: var(--color-hero-particle-svg); } 
+.spanGreenColor { color: var(--color-span-green-color-text); } 
+
+ /* HER0 SECTION */
+.hero-section { padding-top: 100px; position: relative; color: var(--color-primary); } 
+.hero-section .article { max-width: 923px; margin: auto; min-height: 234px; font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 70px; line-height: 78px; text-align: center; margin-bottom: 48px; position: relative; } 
+.hero-section .paragraph { max-width: 725px; margin: auto; min-height: 96px; font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 180%; text-align: center; margin-bottom: 40px; } 
+.hero-section .home-banner-form { max-width: 533px; margin: auto; position: relative; } 
+.hero-section .home-banner-form input { padding: 13px 200px 13px 25px; width: 100%; min-height: 76px; background: var(--color-input-bg); border-radius: 10px; border: none; outline: none; font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; color: #263238; } 
+
+.hero-section .home-banner-form button { padding: 13px 25px; max-width: 163px; min-height: 64px; background: var(--color-button-bg); border-radius: 10px; font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; color: #FFFFFF; float: right; position: relative; top: -70px; left: -6px; border: none; outline: none; } 
+
+ /* * FARM-COMMUNITY SECTION STYLE * */
+.farmvest-community { margin-top: 100px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 50px; } 
+ .farmvest-community svg { max-width: 100%; fill: var(--color-community-svg); } 
+ /* HOW FARM WORK SECTION STYLE */
+.How-FarmVest-Works { display: flex; margin-top: 100px; gap: 96px; } 
+ .How-FarmVest-Works .content { width: 100%; } 
+ .How-FarmVest-Works .content h3 { font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 60px; line-height: 72px; color: var(--color-primary); max-width: 574px; margin-bottom: 32px; } 
+ .How-FarmVest-Works .content .paragraph { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 177%; color: var(--color-primary); max-width: 574px; } 
+ 
+ .How-FarmVest-Works .bottom-content { margin-top: 48px; display: flex; flex-direction: column; gap: 48px; } 
+ .How-FarmVest-Works .bottom-content .rounded-bulletin-article { display: flex; gap: 32px; /* align-items: center; */
+ /* justify-content: center; */
+ /* height: 400px; */}
+ /* .How-FarmVest-Works .bottom-content .rounded-bulletin-article .rounded { border: 1px solid blue; max-width: 100px; } */
+ .How-FarmVest-Works .bottom-content .rounded-bulletin-article .rounded-bulletin { width: 100px; height: 100px; border: none; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--color-bulletin-bg); } 
+ .How-FarmVest-Works .bottom-content .rounded-bulletin-article .rounded-bulletin svg { fill: var( --color-span-green-color-text); } 
+ .How-FarmVest-Works .bottom-content .rounded-bulletin-article .article { display: flex; flex-direction: column; gap: 16px; } 
+ .How-FarmVest-Works .bottom-content .rounded-bulletin-article .article span:nth-child(1) { font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 22px; color: var(--color-primary); } 
+ .How-FarmVest-Works .bottom-content .rounded-bulletin-article .article span:nth-child(2) { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 180%; color: var(--color-primary); } 
+
+ /* TO FUTURE INVESTMENT SECTION STYLE */
+ .to-Future-Investment { display: flex; margin-top: 100px; gap: 126px; } 
+ .to-Future-Investment .content { width: 100%; } 
+ .to-Future-Investment .content h3 { font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 60px; line-height: 72px; color: var(--color-primary); max-width: 574px; margin-bottom: 32px; } 
+ .to-Future-Investment .content .paragraph { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 177%; color: var(--color-primary); max-width: 574px; } 
+
+ /* WHY CHOOSE FARM VEST SECTION STYLE */
+ .Why-Choose-FarmVest { display: flex; margin-top: 100px; gap: 126px; } 
+ .Why-Choose-FarmVest .content { width: 100%; } 
+ .Why-Choose-FarmVest .content h3 { font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 60px; line-height: 72px; color: var(--color-primary); max-width: 574px; margin-bottom: 32px; } 
+ .Why-Choose-FarmVest .content .paragraph { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 177%; color: var(--color-primary); max-width: 574px; } 
+ .Why-Choose-FarmVest .bottom-content { margin-top: 48px; } 
+ .Why-Choose-FarmVest .bottom-content .rounded-bulletin-article { display: flex; gap: 32px; align-items: center; } 
+ .Why-Choose-FarmVest .bottom-content .Why-Choose-FarmVest-left { display: flex; flex-direction: column; gap: 30px; margin-bottom: 48px; } 
+ .Why-Choose-FarmVest .bottom-content .rounded-bulletin-article .rounded-bulletin { width: 64px; height: 64px; border: none; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--color-bulletin-bg); font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 36px; line-height: 40px; text-align: center; color: var(--color-bulletin-text); } 
+ .Why-Choose-FarmVest .bottom-content .rounded-bulletin-article .article span { font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 20px; line-height: 22px; text-align: center; color: var(--color-primary); } 
+ .Why-Choose-FarmVest .Why-choose-FarmVest-btn { padding: 13px 55px; position: absolute; width: 222px; height: 64px; background: var(--color-button-bg); border-radius: 10px; font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; color: #FFFFFF; border: none; cursor: pointer; } 
+
+ /* WHAT CUSTOMER SAY SECTION STYLE */
+ .What-Customers-have-to-say { margin-top: 200px; } 
+ .What-Customers-have-to-say h3 { font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 70px; line-height: 78px; text-align: center; color: var(--color-primary); max-width: 1088px; margin: auto; margin-bottom: 32px; } 
+ .What-Customers-have-to-say p { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 177%; text-align: center; color: var(--color-primary); max-width: 563px; margin: auto; } 
+ .What-Customers-have-to-say-card-container { display: flex; gap: 48px; margin-top: 48px; margin-bottom: 48px; } 
+ .What-Customers-have-to-say-card-container .What-Customers-have-to-say-card { display: flex; position: relative; } 
+ .What-Customers-have-to-say-card-container .What-Customers-have-to-say-card .card-img { width: 100%; } 
+ .What-Customers-have-to-say .What-Customers-have-to-say-card .card-article { width: 100%; background: var(--color-card-article-bg); border-top-right-radius: 20px; border-bottom-right-radius: 20px; position: relative; padding: 32px; } 
+ .What-Customers-have-to-say .What-Customers-have-to-say-card .card-article .card-article-top { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 177%; color: var(--color-primary); } 
+ .What-Customers-have-to-say .What-Customers-have-to-say-card .card-article .card-article-bottom { position: absolute; bottom: 32px; font-family: 'Spartan'; font-style: normal; font-weight: 600; font-size: 18px; line-height: 177%; color: var(--color-primary); }
+ .What-Customers-have-to-say .What-Customers-have-to-say-btn { text-align: center; } 
+ .What-Customers-have-to-say .What-Customers-have-to-say-btn button { padding: 13px 70px; max-width: 221px; min-height: 64px; background: var(--color-button-bg); border-radius: 10px; border: none; font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; text-align: center; color: #FFFFFF; cursor: pointer; } 
+
+ /* DOWNLOAD FARM VEST APP */
+ .Download-FarmVest-app { min-height: 370px; background: var(--color-card-article-bg); border-radius: 20px; margin-top: 150px; background-image: url(../public/assets/downloadAppBg.png); background-repeat: no-repeat; background-position: center; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 10px; } 
+ .Download-FarmVest-app h3 { max-width: 760px; font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 56px; line-height: 63px; color: var(--color-primary); text-align: center; } 
+ .Download-FarmVest-app .download-app-btn { display: flex; gap: 24px; margin-top: 49px; } 
+
+.footer {margin-top: 200px;min-height: 460px;background: var(--color-footer-bg);padding-top: 68px;border: 1px solid var(--color-footer-bg); } 
+
+.footer .inner-footer { min-height: 336px; } 
+.footer .inner-footer .footer-top { display: flex; justify-content: space-between; gap: 70px; border-bottom: 1px solid var(--color-footer-bottom-bg); padding-bottom: 70px; } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content.footer-social-links { display: flex; justify-content: space-between; gap: 28px; width: 45%; } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .footer-logo { display: flex; align-items: center; gap: 10px; } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .footer-logo h3, .footer .inner-footer .footer-top 
+ .footer-top-content .footer-logo svg { font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 25px; color: var(--color-primary); fill: var(--color-primary); } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .social { display: flex; gap: 16px; } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .social div { width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-social-bg); display: flex; align-items: center; justify-content: center; } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .social div svg { fill: var(--color-social-svg-bg); } 
+ .footer .inner-footer .footer-top .footer-top-content .top-footer-paragaraph { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 177%; color: var(--color-primary); margin-top: 24px; } 
+
+ .footer .inner-footer .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 56px; margin-bottom: 56px; } 
+ .footer .inner-footer .footer-bottom div p { font-family: 'Spartan'; font-style: normal; font-weight: 300; font-size: 12px; line-height: 13px; color: var(--color-primary); } 
+ .footer .inner-footer .footer-bottom div ul { display: flex; gap: 40px; padding: 0; } 
+ .footer .inner-footer .footer-bottom div ul li { list-style: none; } 
+ .footer .inner-footer .footer-bottom div ul li a { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 16px; color: var(--color-primary); } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .form-subscribe-title, 
+ .footer .inner-footer .footer-top 
+ .footer-top-content.footer-social-links 
+ .social-links h3, 
+ .footer-top-content.footer-social-links 
+ .call-contact .footer-top-content.footer-social-links 
+ .call-contact h3 { font-family: 'Spartan'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 177%; color: var(--color-primary); /* width: 438px; */}
+ .footer-top-content.footer-social-links 
+ .call-contact div p { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 19px; color: var(--color-primary); } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .footer-form { margin-top: 24px; } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .footer-form input { width: 100%; padding: 13px 0px 13px 25px; min-height: 76px; background: var(--color-input-bg); border-radius: 10px; border: none; outline: none; font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #263238; } 
+ .footer .inner-footer .footer-top 
+ .footer-top-content .footer-form button { float: right; position: relative; top: -70px; left: -6px; padding-left: 20px; padding-right: 20px; max-width: 145px; min-height: 64px; background: var(--color-button-bg); border-radius: 10px; font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #FFFFFF; border: none; outline: none; cursor: pointer; } 
