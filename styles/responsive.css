@@ -36,20 +36,41 @@ nav ul .logo.mobile-logo h2 { color: #fff; font-size: 35px; }
  }
 @media(max-width: 767px){
  .footer .inner-footer .footer-bottom div ul { gap: 30px; } 
+ .farmvest-community, .How-FarmVest-Works, .to-Future-Investment, .Why-Choose-FarmVest, .What-Customers-have-to-say, .Download-FarmVest-app{ margin-top: 50px; }
+ .footer{
+   margin-top: 100px;
+ }
+ .How-FarmVest-Works{
+   gap: 10px;
+ }
+ .Why-Choose-FarmVest{
+   gap: 60px;
+ }
+ .farmvest-community .farmvest-title h2{
+  font-size: 13px;
+ }
 .footer .inner-footer .footer-bottom ul { flex-direction: column; text-align: left; } 
 .footer .inner-footer .footer-bottom { align-items: flex-start; } 
  .hero-section .home-banner-form button { max-width: 130px; padding: 13px 20px; font-size: 13px; } 
- .hero-section .home-banner-form input { padding: 13px 130px 13px 25px; font-size: 13px; } 
+ .hero-section .home-banner-form input { padding: 13px 130px 13px 25px; font-size: 13px; }
+ .particle-svg{
+   display: none;
+ } 
  .footer .inner-footer .footer-top 
  .footer-top-content .footer-form input { padding: 13px 110px 13px 25px; font-size: 13px; } 
- .farmvest-community { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 50px; } 
+ .inner-farmvest-community {text-align: center; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 50px; align-items: center; justify-content: center; } 
  .home-banner .article, .Why-Choose-FarmVest .content h3, .How-FarmVest-Works .content h3, .to-Future-Investment .content h3, .Download-FarmVest-app h3, .What-Customers-have-to-say h3 { width: 100%; font-size: 50px; } 
  .footer .inner-footer .footer-top{
      padding-bottom: 30px !important;
  }
  }
+@media(max-width: 850px){
+.naira-svg-particle, .tickStar-svg {
+  display: none;
+}
+}
 @media(max-width: 600px){
- .hero-section .article { width: 100%; font-size: 40px; line-height: 55px; } 
+ .hero-section .article { width: 100%; font-size: 60px; } 
  .accordion__title, .App .Why-Choose-FarmVest .bottom-content .img-icon-article .article span { font-size: 18px; } 
  .home-banner .article, .Why-Choose-FarmVest .content h3, .How-FarmVest-Works .content h3, .to-Future-Investment .content h3, .Download-FarmVest-app h3, .What-Customers-have-to-say h3 { width: 100%; font-size: 35px; line-height: 50px; } 
  .Why-Choose-FarmVest .bottom-content .rounded-bulletin-article .rounded-bulletin { width: 50px; height: 50px; } 
@@ -71,17 +92,35 @@ nav ul .logo.mobile-logo h2 { color: #fff; font-size: 35px; }
  .accordion__title { font-size: 16px !important; } 
  }
 @media(max-width: 483px){
- .farmvest-community { gap: 20px; } 
+  .inner-farmvest-community { gap: 20px; } 
+  .farmvest-community .farmvest-title{
+    margin-bottom: 10px;
+  }
  .How-FarmVest-Works { margin-top: 50px; } 
  .accordion__title { font-size: 16px; } 
  .Download-FarmVest-app h3 { width: 100%; font-size: 30px; line-height: 45px; } 
  .home-banner .article, .Why-Choose-FarmVest .content h3, .How-FarmVest-Works .content h3, .to-Future-Investment .content h3, .Download-FarmVest-app h3, .What-Customers-have-to-say h3 { width: 100%; font-size: 35px; line-height: 50px; } 
  .particleTopLeft { top: -80px; left: -50px; } 
+ .hero-section .article { width: 100%; font-size: 40px; line-height: 65px; } 
  }
  @media screen and (max-width: 568px){
  .What-Customers-have-to-say-card-container .What-Customers-have-to-say-card { flex-direction: column; } 
  .What-Customers-have-to-say .What-Customers-have-to-say-card .card-article .card-article-bottom { position: relative; top: 0; margin-top: 20px; } 
  .What-Customers-have-to-say .What-Customers-have-to-say-card .card-article { border-top-right-radius: 0px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; } 
+ .home-banner-form{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+ }
+ .hero-section .home-banner-form input{
+  padding: 13px 25px 13px 25px;
+ }
+ .hero-section .home-banner-form button{
+  float: none;
+  top: 0; 
+  left: 0;
+  max-width: 100%;
+ }
  }
  @media screen and (max-width: 904px){
  .How-FarmVest-Works, .Why-Choose-FarmVest { flex-direction: column; } 

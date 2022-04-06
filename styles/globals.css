@@ -95,7 +95,21 @@ nav ul .mobile-header-btns, nav ul .logo.mobile-logo svg { cursor: pointer; }
 .hero-section .home-banner-form button { padding: 13px 25px; max-width: 163px; min-height: 64px; background: var(--color-button-bg); border-radius: 10px; font-family: 'Spartan'; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; color: #FFFFFF; float: right; position: relative; top: -70px; left: -6px; border: none; outline: none; } 
 
  /* * FARM-COMMUNITY SECTION STYLE * */
-.farmvest-community { margin-top: 100px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 50px; } 
+.farmvest-community { margin-top: 100px; } 
+.farmvest-community .farmvest-title{
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  text-align: center;
+  display: flex;
+  align-items: center;justify-content: center;
+  width: 100%;
+}
+.farmvest-community .farmvest-title h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Spartan'; font-style: normal; font-weight: 700; font-size: 25px; color: var(--color-primary);
+}
+.inner-farmvest-community { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 50px; } 
  .farmvest-community svg { max-width: 100%; fill: var(--color-community-svg); } 
  /* HOW FARM WORK SECTION STYLE */
 .How-FarmVest-Works { display: flex; margin-top: 100px; gap: 96px; } 

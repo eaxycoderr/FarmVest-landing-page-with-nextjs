@@ -324,6 +324,10 @@ const HomePage = () => {
         </section>
 
         <section className="farmvest-community container">
+          <div className="farmvest-title">
+            <h2>we feature on popular partner like</h2>
+          </div>
+          <div className="inner-farmvest-community">
           <div>
             <svg width="202" height="29" viewBox="0 0 202 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -437,6 +441,8 @@ const HomePage = () => {
             </g>
             </svg>
         </div>
+          </div>
+          
         </section>
 
         <section className="How-FarmVest-Works container">
@@ -563,7 +569,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="Why-Choose-FarmVest">
+        <section className="Why-Choose-FarmVest container">
           <div className="content">
             <div className="top-content">
               <h3>
